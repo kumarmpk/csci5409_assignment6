@@ -19,7 +19,10 @@ class GetAll extends Component {
   async componentDidMount() {
     try {
       await axios
-        .get(`http://afternoon-taiga-86166.herokuapp.com/api/jobs`)
+        //.get(`http://afternoon-taiga-86166.herokuapp.com/api/jobs`)
+        .get(
+          `https://e5iselugad.execute-api.us-east-1.amazonaws.com/default/companyXselectalljobs`
+        )
         .then((res) => {
           let objList = [];
           let resList = {};

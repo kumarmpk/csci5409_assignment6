@@ -31,8 +31,11 @@ class OrderPage extends Component {
     let jobName = this.state.jobName;
 
     await axios
-      .get(
+      /* .get(
         `http://afternoon-taiga-86166.herokuapp.com/api/jobList?jobName=${jobName}`
+      ) */
+      .get(
+        `https://zcfh4qjk3a.execute-api.us-east-1.amazonaws.com/Dev/getajobdetail?jobName=${jobName}`
       )
       .then((res) => {
         let jobs = res.data.result;

@@ -9,6 +9,8 @@ dist/
 tmp/
 app/**/*.js
 app/**/*.js.map
+build/
+package-lock.json
 
 # dependencies
 node_modules/
@@ -146,6 +148,7 @@ dist
 **/*.back.*
 
 node_modules
+build
 
 *.sublime*
 
